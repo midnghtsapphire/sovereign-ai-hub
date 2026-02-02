@@ -46,7 +46,7 @@ const models = [
 
 const Models = () => {
   return (
-    <section className="relative py-32 overflow-hidden">
+    <section id="models" className="relative py-32 overflow-hidden">
       {/* Background effects */}
       <div className="absolute bottom-0 right-0 w-[500px] h-[500px] bg-accent/5 rounded-full blur-3xl" />
       

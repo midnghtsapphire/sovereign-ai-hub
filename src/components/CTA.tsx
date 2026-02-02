@@ -1,9 +1,30 @@
 import { Button } from "@/components/ui/button";
-import { Zap, Shield, ArrowRight } from "lucide-react";
+import { Zap, Shield, ArrowRight, Apple, Monitor } from "lucide-react";
+import { useState } from "react";
+import { toast } from "sonner";
 
 const CTA = () => {
+  const [downloading, setDownloading] = useState(false);
+
+  const handleDownload = (platform: string) => {
+    setDownloading(true);
+    toast.success(`Starting ${platform} download...`, {
+      description: "Your download will begin shortly.",
+    });
+    setTimeout(() => {
+      setDownloading(false);
+      toast.info("Demo Mode", {
+        description: "This is a demo. Real downloads coming soon!",
+      });
+    }, 1500);
+  };
+
+  const handleDocs = () => {
+    document.getElementById("demo")?.scrollIntoView({ behavior: "smooth" });
+  };
+
   return (
-    <section className="relative py-32 overflow-hidden">
+    <section id="cta" className="relative py-32 overflow-hidden">
       {/* Background effects */}
       <div className="absolute inset-0 bg-gradient-to-b from-transparent via-primary/5 to-transparent" />
       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[400px] bg-primary/10 rounded-full blur-3xl" />
@@ -24,20 +45,39 @@ const CTA = () => {
             Stop asking permission. Run uncensored AI locally and experience true digital sovereignty.
           </p>
           
-          {/* CTA buttons */}
-          <div className="flex flex-col sm:flex-row gap-4 justify-center mb-12">
-            <Button variant="hero" size="xl" className="group">
-              <Zap className="w-5 h-5" />
-              Download for Free
+          {/* Platform download buttons */}
+          <div className="flex flex-col sm:flex-row gap-4 justify-center mb-8">
+            <Button 
+              variant="hero" 
+              size="xl" 
+              className="group"
+              onClick={() => handleDownload("Windows")}
+              disabled={downloading}
+            >
+              <Monitor className="w-5 h-5" />
+              Download for Windows
               <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
             </Button>
-            <Button variant="heroOutline" size="xl">
-              View Documentation
+            <Button 
+              variant="heroOutline" 
+              size="xl"
+              onClick={() => handleDownload("macOS")}
+              disabled={downloading}
+            >
+              <Apple className="w-5 h-5" />
+              Download for macOS
             </Button>
           </div>
+
+          <button 
+            onClick={handleDocs}
+            className="text-primary hover:underline text-sm"
+          >
+            View Documentation →
+          </button>
           
           {/* Stats */}
-          <div className="grid grid-cols-3 gap-8 max-w-2xl mx-auto pt-12 border-t border-border">
+          <div className="grid grid-cols-3 gap-8 max-w-2xl mx-auto pt-12 mt-8 border-t border-border">
             <div>
               <p className="text-3xl md:text-4xl font-bold text-primary mb-2">50+</p>
               <p className="text-muted-foreground text-sm">Uncensored Models</p>
