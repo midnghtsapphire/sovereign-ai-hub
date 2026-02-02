@@ -41,7 +41,7 @@ const features = [
 
 const Features = () => {
   return (
-    <section className="relative py-32 overflow-hidden">
+    <section id="features" className="relative py-32 overflow-hidden">
       {/* Background accent */}
       <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[600px] h-[600px] bg-primary/5 rounded-full blur-3xl" />
       

@@ -2,8 +2,16 @@ import { Button } from "@/components/ui/button";
 import { Shield, Zap, Lock } from "lucide-react";
 
 const Hero = () => {
+  const scrollToDemo = () => {
+    document.getElementById("demo")?.scrollIntoView({ behavior: "smooth" });
+  };
+
+  const scrollToDownload = () => {
+    document.getElementById("cta")?.scrollIntoView({ behavior: "smooth" });
+  };
+
   return (
-    <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
+    <section id="hero" className="relative min-h-screen flex items-center justify-center overflow-hidden">
       {/* Background Effects */}
       <div className="absolute inset-0 bg-grid opacity-30" />
       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-gradient-to-r from-primary/20 to-accent/10 rounded-full blur-3xl opacity-30" />
@@ -33,11 +41,11 @@ const Hero = () => {
           
           {/* CTA Buttons */}
           <div className="flex flex-col sm:flex-row gap-4 justify-center mb-16 animate-fade-up" style={{ animationDelay: '0.3s' }}>
-            <Button variant="hero" size="xl">
+            <Button variant="hero" size="xl" onClick={scrollToDownload}>
               <Zap className="w-5 h-5" />
               Download Free
             </Button>
-            <Button variant="heroOutline" size="xl">
+            <Button variant="heroOutline" size="xl" onClick={scrollToDemo}>
               See How It Works
             </Button>
           </div>
