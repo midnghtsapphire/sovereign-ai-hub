@@ -55,7 +55,7 @@ Compared with common AI chat products:
 - Email/contact clicks (Enterprise)
 - Pro plan click-through rate
 
-## Research engines (revvel-standard)
+## Research engines (Revvel-standard)
 
 1. **Market intelligence engine**
    - Output: TAM/SAM/SOM framing for privacy-first AI + local/offline LLM demand.
@@ -74,7 +74,7 @@ Compared with common AI chat products:
 
 - Publish a public comparison page (`/compare`) for “cloud AI vs sovereign local AI”.
 - Add conversion-ready proof assets: benchmark snapshots and offline workflow screenshots.
-- Add a lead magnet for enterprise security teams (privacy architecture one-pager).
+- Add a downloadable resource for enterprise security teams (privacy architecture one-pager).
 - Add a lightweight ROI calculator for “subscription spend avoided vs local deployment”.
 
 ## Assets inventory
