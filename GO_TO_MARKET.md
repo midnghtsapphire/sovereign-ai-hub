@@ -55,10 +55,45 @@ Compared with common AI chat products:
 - Email/contact clicks (Enterprise)
 - Pro plan click-through rate
 
+## Research engines (revvel-standard)
+
+1. **Market intelligence engine**
+   - Output: TAM/SAM/SOM framing for privacy-first AI + local/offline LLM demand.
+   - Cadence: monthly refresh from search trend and competitor pricing deltas.
+2. **Customer signal engine**
+   - Output: segmented user pain points (privacy, offline reliability, token-cost avoidance).
+   - Cadence: weekly synthesis of community threads and inbound questions.
+3. **Competitive positioning engine**
+   - Output: feature/pricing matrix against cloud AI chat and local model launchers.
+   - Cadence: bi-weekly update tied to release notes from top competitors.
+4. **Conversion optimization engine**
+   - Output: CTA, copy, and page-layout experiments for install intent.
+   - Cadence: ongoing, with winner promotion every sprint.
+
+## Suggestions (actionable next steps)
+
+- Publish a public comparison page (`/compare`) for “cloud AI vs sovereign local AI”.
+- Add conversion-ready proof assets: benchmark snapshots and offline workflow screenshots.
+- Add a lead magnet for enterprise security teams (privacy architecture one-pager).
+- Add a lightweight ROI calculator for “subscription spend avoided vs local deployment”.
+
+## Assets inventory
+
+- **Brand assets:** logo, color system, typography (`BRAND_GUIDELINES.md`).
+- **Trust assets:** security policy and disclosure process (`SECURITY.md`).
+- **Launch assets:** hero copy, product sections, pricing narratives (`README.md`, site UI).
+- **Deployment assets:** Vercel deployment process and environment template (`DEPLOYMENT_GUIDE.md`, `.env.example`).
+
+## Artifacts (what is produced and tracked)
+
+- **Research artifact:** market/competitor/customer synthesis updates in this file.
+- **Execution artifact:** deployed website build (`dist/`) and Website-in-Test URL in README.
+- **Validation artifact:** baseline checks (`npm run validate`, `npm run lint`, `npm test`, `npm run build`).
+- **Governance artifact:** release notes and change traceability (`CHANGELOG.md`).
+
 ## Roadmap (next S2M steps)
 
 1. Replace “Download Free” with an actual download flow (GitHub Releases or a hosted installer).
 2. Add a lightweight waitlist + email capture (privacy-respecting) if needed.
 3. Add product screenshots/video in `public/` and the Demo section.
 4. Add analytics with privacy-first defaults (optional; document in `SECURITY.md`).
-
