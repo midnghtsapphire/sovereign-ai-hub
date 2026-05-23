@@ -1,82 +1,54 @@
-# Welcome to your Lovable project
+# Sovereign AI Hub
 
-## Project info
+Privacy-first landing site for a “sovereign AI” desktop/local stack: run powerful LLMs locally, keep data on-device, and offer clear upgrade paths (Pro/Enterprise) for teams.
 
-**URL**: https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID
+- Website-in-Test (Vercel): set after first deploy (see `DEPLOYMENT_GUIDE.md`)
+- Status: marketing site + UI demo (no backend)
 
-## How can I edit this code?
+## Goals (S2M)
 
-There are several ways of editing your application.
+- Ship a clean, deployable site with working `lint`, `test`, and `build`.
+- Provide revvel-standard docs: `CHANGELOG.md`, `DEPLOYMENT_GUIDE.md`, `GO_TO_MARKET.md`, `BRAND_GUIDELINES.md`, `SECURITY.md`.
+- Maintain a single-iteration, production-minded baseline (installability + validation scripts).
 
-**Use Lovable**
+## Tech Stack
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and start prompting.
+- Vite + React + TypeScript
+- Tailwind CSS + shadcn/ui (Radix primitives)
+- Vitest + Testing Library
+- ESLint
 
-Changes made via Lovable will be committed automatically to this repo.
+## Quickstart
 
-**Use your preferred IDE**
-
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
-
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
-
-Follow these steps:
-
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
-
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
-
-# Step 3: Install the necessary dependencies.
-npm i
-
-# Step 4: Start the development server with auto-reloading and an instant preview.
+```bash
+npm install
 npm run dev
 ```
 
-**Edit a file directly in GitHub**
+## Commands
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+- Dev: `npm run dev`
+- Lint: `npm run lint`
+- Test: `npm test`
+- Build: `npm run build`
+- Preview build: `npm run preview`
 
-**Use GitHub Codespaces**
+## Deployment
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+Deploy on Vercel as a static Vite site.
 
-## What technologies are used for this project?
+- Guide: `DEPLOYMENT_GUIDE.md`
+- Build output: `dist/`
 
-This project is built with:
+## Security
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+- Policy and reporting: `SECURITY.md`
 
-## How can I deploy this project?
+## Test Matrix
 
-Simply open [Lovable](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and click on Share -> Publish.
-
-## Can I connect a custom domain to my Lovable project?
-
-Yes, you can!
-
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/features/custom-domain#custom-domain)
-
----
-
-## Test
-
-| Feature | Status |
-|---------|--------|
-| Feature | ✅ Ready |
-
+| Area | Status |
+|------|--------|
+| Install | ✅ `npm install` |
+| Lint | ✅ `npm run lint` |
+| Unit tests | ✅ `npm test` |
+| Build | ✅ `npm run build` |
