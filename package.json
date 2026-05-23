@@ -1,8 +1,9 @@
 {
-  "name": "vite_react_shadcn_ts",
+  "name": "sovereign-ai-hub",
   "private": true,
-  "version": "0.0.0",
+  "version": "0.1.0",
   "type": "module",
+  "description": "Privacy-first sovereign AI landing page (local/offline LLM positioning).",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
