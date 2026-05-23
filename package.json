@@ -10,7 +10,10 @@
     "lint": "eslint .",
     "preview": "vite preview",
     "test": "vitest run",
-    "test:watch": "vitest"
+    "test:watch": "vitest",
+    "validate": "node scripts/validate-baseline.mjs",
+    "baseline:test": "node scripts/test-baseline.mjs",
+    "baseline:build": "node scripts/build-baseline.mjs"
   },
   "dependencies": {
     "@hookform/resolvers": "^3.10.0",
