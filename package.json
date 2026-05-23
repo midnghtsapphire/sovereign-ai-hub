@@ -6,10 +6,13 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
+    "build:baseline": "node scripts/build-baseline.mjs",
     "build:dev": "vite build --mode development",
     "lint": "eslint .",
+    "lint:baseline": "node scripts/lint-baseline.mjs",
     "preview": "vite preview",
     "test": "vitest run",
+    "test:baseline": "node scripts/test-baseline.mjs",
     "test:watch": "vitest"
   },
   "dependencies": {
