@@ -1,8 +1,9 @@
 {
-  "name": "vite_react_shadcn_ts",
+  "name": "sovereign-ai-hub",
   "private": true,
-  "version": "0.0.0",
+  "version": "0.1.0",
   "type": "module",
+  "description": "Privacy-first sovereign AI landing page (local/offline LLM positioning).",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
@@ -10,7 +11,10 @@
     "lint": "eslint .",
     "preview": "vite preview",
     "test": "vitest run",
-    "test:watch": "vitest"
+    "test:watch": "vitest",
+    "validate": "node scripts/validate-baseline.mjs",
+    "baseline:test": "node scripts/test-baseline.mjs",
+    "baseline:build": "node scripts/build-baseline.mjs"
   },
   "dependencies": {
     "@hookform/resolvers": "^3.10.0",
