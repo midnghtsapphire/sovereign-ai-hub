@@ -1,5 +1,9 @@
 # Sovereign AI Hub
 
+
+<!-- AUTO-PACKAGE-BADGES:START -->
+
+<!-- AUTO-PACKAGE-BADGES:END -->
 Privacy-first landing site for a “sovereign AI” desktop/local stack: run powerful LLMs locally, keep data on-device, and offer clear upgrade paths (Pro/Enterprise) for teams.
 
 - Website-in-Test (Vercel): set after first deploy (see `DEPLOYMENT_GUIDE.md`)
